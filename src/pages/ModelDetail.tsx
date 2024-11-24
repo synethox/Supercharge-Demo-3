@@ -191,7 +191,10 @@ const ModelDetail = () => {
             Ab €{car.price}
           </p>
           <button
-            onClick={() => navigate('/dealer-finder')}
+            onClick={() => {
+              navigate('/dealer-finder');
+              window.scrollTo(0, 0);}
+            }
             className="bg-slate-900 text-white px-8 py-3 rounded-md font-semibold hover:bg-slate-800 transition"
           >
             Händler finden
